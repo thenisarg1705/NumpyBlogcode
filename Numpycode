@@ -1,0 +1,136 @@
+#code 1
+import numpy as np
+
+#code 2
+array = np.array([1,2,3])
+
+print(array)
+
+#Output: [1 2 3]
+
+
+#code 3
+zeros = np.zeros(3)
+
+print(zeros)
+
+#Output: [0. 0. 0.]
+
+
+#code 4
+type(zeros[0])
+
+#Output: numpy.float64
+
+
+
+#code 5
+my_list = [1,2,3]
+
+array = np.array(my_list)
+
+print(array)
+
+#Output: [1 2 3]
+
+
+
+
+#code 6
+two_dim_array = np.array([(1,2,3), (4,5,6), (7,8,9)])
+
+print(two_dim_array)
+
+#Output:
+
+#[[1 2 3]
+
+ #[4 5 6]
+
+# [7 8 9]]
+ 
+ 
+ 
+ #code 7
+ arr = np.array([[1,2,3], [4,6], [7,8,9]])
+
+print(arr)
+
+#Output: [list([1, 2, 3]) list([4, 6]) list([7, 8, 9])]
+
+
+
+#code 8
+range_array = np.linspace(0, 10, 4)
+
+print(range_array)
+
+#Output: [ 0.          3.33333333 6.66666667 10.    
+
+
+
+#code 9
+random_array = np.random.randint(15, size=10)
+
+print(random_array)
+
+#Output: [ 7 11  8 2 6 4 9 6 10  9]
+
+
+
+#code 8
+print(array.size)
+
+#Output: 3
+
+print(array.shape)
+
+#Output: (3,)
+
+print(multi_dim_array.size)
+
+#Output: 9
+
+print(multi_dim_array.shape)
+
+#Output: (3, 3)
+
+
+
+#code 9
+two_dim_array = np.array([(1,2,3,4), (5,6,7,8)])
+
+two_dim_array = two_dim_array.reshape(4,2)
+
+print(two_dim_array)
+
+#Output: 
+
+#[[1 2]
+
+# [3 4]
+
+# [5 6]
+
+# [7 8]]
+ 
+ 
+ #code 10
+ print(two_dim_array.sum(axis=0))
+
+Output: [ 6  8 10 12]
+
+print(two_dim_array.sum(axis=1))
+
+#Output: [10 26]
+
+
+
+#code 11
+print(two_dim_array + two_dim_array)
+
+#Output: 
+
+#[[ 2  4 6 8]
+
+# [10 12 14 16]]
